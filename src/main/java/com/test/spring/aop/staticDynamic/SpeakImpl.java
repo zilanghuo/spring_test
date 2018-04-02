@@ -5,9 +5,9 @@ import com.test.spring.aop.common.ISpeak;
 /**
  * @author lwf
  * @date 2018/4/2
- * use:
+ * use: 被代理类型的实现
  */
-public class StaticSpeakImpl implements ISpeak{
+public class SpeakImpl implements ISpeak{
 
 
     @Override

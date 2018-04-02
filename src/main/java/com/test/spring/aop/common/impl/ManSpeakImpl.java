@@ -11,21 +11,11 @@ public class ManSpeakImpl implements ISpeak {
 
     @Override
     public void speakBefore() {
-        try {
-            Thread.currentThread().sleep(2 * 1000);
-        } catch (Exception e) {
-
-        }
-
-        System.out.println("before:-----------------------------");
+        System.out.println("实现 speakBefore方法----------------------------");
     }
 
     @Override
     public void speakAfter() {
-        try {
-            Thread.sleep(2 * 1000);
-        } catch (InterruptedException e) {
-        }
-        System.out.println("after-------------------------------");
+        System.out.println("实现 speakAfter方法-------------------------------");
     }
 }
