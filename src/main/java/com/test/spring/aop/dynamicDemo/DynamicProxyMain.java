@@ -2,6 +2,7 @@ package com.test.spring.aop.dynamicDemo;
 
 import com.test.spring.aop.common.ISpeak;
 import com.test.spring.aop.common.impl.ManSpeakImpl;
+import com.test.spring.aop.common.impl.WomanSpeakImpl;
 
 /**
  * @author lwf
@@ -15,5 +16,12 @@ public class DynamicProxyMain {
         ISpeak speak = (ISpeak) dynamicProxy.newProxyInstance();
         speak.speakBefore();
         speak.speakAfter();
+
+        DynamicProxy dynamicProxy2 = new DynamicProxy(new WomanSpeakImpl());
+        ISpeak speak2 = (ISpeak) dynamicProxy2.newProxyInstance();
+        speak2.speakBefore();
+        speak2.speakAfter();
+
+
     }
 }
