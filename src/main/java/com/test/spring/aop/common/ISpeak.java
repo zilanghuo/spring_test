@@ -1,4 +1,4 @@
-package com.test.spring.aop;
+package com.test.spring.aop.common;
 
 /**
  * @author lwf

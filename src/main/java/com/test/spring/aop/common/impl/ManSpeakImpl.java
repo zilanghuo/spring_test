@@ -1,6 +1,6 @@
-package com.test.spring.aop.impl;
+package com.test.spring.aop.common.impl;
 
-import com.test.spring.aop.ISpeak;
+import com.test.spring.aop.common.ISpeak;
 
 /**
  * @author lwf

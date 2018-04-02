@@ -1,4 +1,4 @@
-package com.test.spring.aop;
+package com.test.spring.aop.staticDynamic;
 
 import com.test.spring.aop.common.ISpeak;
 
@@ -7,13 +7,13 @@ import com.test.spring.aop.common.ISpeak;
  * @date 2018/4/2
  * use:
  */
-public class Main {
+public class StaticMain {
 
     public static void main(String[] args) {
-        // jdk dynamic proxy
-        System.out.println("******** jdk dynamic proxy ******** ");
-        ISpeak speak = PersonProxyFactory.newJdkProxy();
+        ISpeak speak = new StaticSpeakImpl();
         speak.speakBefore();
         speak.speakAfter();
+
     }
+
 }
