@@ -11,12 +11,13 @@ import java.lang.reflect.Method;
  * @date 2018/4/2
  * use:
  */
-public class MyMethodInterceptor implements MethodInterceptor {
-
+public class AroundAdvice implements MethodInterceptor {
 
     @Override
     public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
         System.out.println("before intercept--------------------");
-        return methodProxy.invoke(o, objects);
+        Object invoke = methodProxy.invokeSuper(o, objects);
+        System.out.println("after intercept---------------------");
+        return invoke;
     }
 }

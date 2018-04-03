@@ -7,7 +7,7 @@ package com.test.spring.aop.cglib;
  */
 public class HelloConcrete {
 
-    public String sayHello() {
-        return "HelloConcrete:你好------ ";
+    public void sayHello() {
+        System.out.println( "HelloConcrete:你好------ ");
     }
 }
